@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лёша + Аня — свадебное приглашение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="hero">
+        <div class="noise"></div>
+        <div class="envelope-wrap">
+          <button class="envelope" id="openInvite" aria-label="Открыть приглашение">
+            <span class="flap"></span>
+            <span class="card">
+              <span class="card-date">09 / 08 / 25</span>
+            </span>
+            <span class="front">
+              <span class="front-main">ВАС ХОТЯТ КОЕ-КУДА</span>
+              <span class="front-script">пригласить</span>
+            </span>
+          </button>
+          <p class="hint">Коснитесь конверта, чтобы открыть приглашение</p>
+        </div>
+      </section>
+
+      <section class="invitation hidden" id="invitation">
+        <header class="top-title block">
+          <p class="small-script">love</p>
+          <h1>Лёша<br />+<br />Аня</h1>
+          <p class="date">09 августа 2025 года</p>
+        </header>
+
+        <section class="grid block intro">
+          <article>
+            <h2>Дорогие наши друзья и родные!</h2>
+            <p>
+              Мы приглашаем вас разделить с нами один из самых важных и счастливых дней —
+              день нашей свадьбы.
+            </p>
+          </article>
+          <article>
+            <h3>Мы ждём вас</h3>
+            <p>Будет тепло, душевно и очень по‑семейному.</p>
+          </article>
+          <article>
+            <h3>Место проведения</h3>
+            <p>Загородный клуб «Июнь», ул. Солнечная, 24</p>
+            <a class="btn" href="#map">Как добраться</a>
+          </article>
+        </section>
+
+        <section class="block timeline">
+          <h2>Программа дня</h2>
+          <div class="timeline-row">
+            <div><strong>15:30</strong><span>Сбор гостей</span></div>
+            <div><strong>16:00</strong><span>Выездная церемония</span></div>
+            <div><strong>17:30</strong><span>Праздничный банкет</span></div>
+            <div><strong>19:00</strong><span>Танцы и поздравления</span></div>
+          </div>
+        </section>
+
+        <section class="block dresscode" id="map">
+          <h2>Дресс-код</h2>
+          <p>
+            Нам будет приятно, если вы поддержите нежную палитру праздника:
+          </p>
+          <div class="palette">
+            <span style="--c:#d8e2ff"></span>
+            <span style="--c:#e4dcff"></span>
+            <span style="--c:#c8d9ff"></span>
+            <span style="--c:#dde8d0"></span>
+            <span style="--c:#f2e0dc"></span>
+          </div>
+        </section>
+
+        <section class="block countdown-block">
+          <h2>До свадьбы осталось</h2>
+          <div class="countdown" id="countdown">
+            <div><b id="d">00</b><span>дней</span></div>
+            <div><b id="h">00</b><span>часов</span></div>
+            <div><b id="m">00</b><span>мин</span></div>
+            <div><b id="s">00</b><span>сек</span></div>
+          </div>
+        </section>
+
+        <section class="block wishes">
+          <h2>Пожелания</h2>
+          <p>
+            Ваше присутствие — лучший подарок. Если захотите нас порадовать, будем рады
+            вкладу в мечту о свадебном путешествии.
+          </p>
+        </section>
+
+        <section class="block contacts">
+          <h2>Контакты</h2>
+          <p>
+            По всем вопросам: <br />
+            Алексей: <a href="tel:+79998887766">+7 (999) 888-77-66</a>
+          </p>
+          <a class="btn" href="#form">Заполнить анкету</a>
+        </section>
+
+        <section class="block form" id="form">
+          <h2>Анкета гостя</h2>
+          <form>
+            <label>
+              Ваше имя и фамилия
+              <input type="text" placeholder="Например: Мария Иванова" />
+            </label>
+            <label>
+              Сможете присутствовать?
+              <select>
+                <option>С радостью приду!</option>
+                <option>К сожалению, не смогу</option>
+              </select>
+            </label>
+            <label>
+              Напишите пожелание
+              <textarea rows="4" placeholder="Будем рады вашим словам"></textarea>
+            </label>
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+        </section>
+
+        <footer class="block footer-title">
+          <p>Ждём вас с любовью</p>
+          <h2>Лёша<br />+<br />Аня</h2>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
