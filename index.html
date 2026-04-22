@@ -3,122 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Лёша + Аня</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <title>Лёша + Аня — приглашение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="scene" id="scene">
-      <button class="envelope" id="openInvite" aria-label="Открыть приглашение">
-        <div class="env-back"></div>
+    <section class="hero" id="hero">
+      <button id="openInvite" class="envelope" aria-label="Открыть приглашение">
+        <div class="back"></div>
         <div class="photo"></div>
-        <div class="env-front">
-          <p>ВАС ХОТЯТ КОЕ-КУДА</p>
-          <span>пригласить</span>
+        <div class="front">
+          <div class="upper">ВАС ХОТЯТ КОЕ-КУДА</div>
+          <div class="script">пригласить</div>
         </div>
       </button>
-      <p class="tap">Для просмотра коснитесь экрана</p>
-      <div class="finger">☝</div>
+      <p>Для просмотра коснитесь экрана</p>
+      <span class="hand">☝</span>
     </section>
 
-    <main class="paper" id="invitation">
-      <section class="title sec">
+    <main class="paper" id="paper">
+      <section class="block center">
         <small>love</small>
-        <h1>Лёша<br/>+<br/>Аня</h1>
-        <div class="car doodle"></div>
-        <p class="mini-date">09 августа 2025 | 15:30</p>
+        <h1>Лёша<br>+<br>Аня</h1>
+        <svg class="draw car" viewBox="0 0 220 120"><path d="M30 85 h140 l20-25 h20 v25 h-15 a15 15 0 0 1-30 0 h-55 a15 15 0 0 1-30 0 h-20 z M55 55 h95 l15 20 h-135 z"/><circle cx="93" cy="88" r="12"/><circle cx="167" cy="88" r="12"/></svg>
+        <div class="mini">09 АВГУСТА 2026 | 15:30</div>
       </section>
 
-      <section class="sec two-col">
-        <article>
-          <h2>Дорогие наши<br/>друзья и родные!</h2>
-          <p>Мы приглашаем вас разделить с нами радость особенного дня — дня нашей свадьбы.</p>
-        </article>
-        <article class="couple doodle"></article>
+      <section class="block two">
+        <div>
+          <h2>Дорогие наши<br>друзья и родные!</h2>
+          <p>Мы приглашаем вас разделить с нами самый важный и счастливый день — день нашей свадьбы.</p>
+        </div>
+        <svg class="draw" viewBox="0 0 170 150"><path d="M25 130 q20-50 50-45 q15 0 20 12 q8-18 25-18 q30 0 25 50"/><circle cx="80" cy="55" r="12"/><circle cx="110" cy="52" r="10"/></svg>
       </section>
 
-      <section class="sec two-col middle">
-        <article>
-          <div class="garland doodle"></div>
+      <section class="block two">
+        <div>
+          <svg class="draw" viewBox="0 0 200 80"><path d="M10 20 q20 25 40 0 q20 25 40 0 q20 25 40 0 q20 25 40 0"/></svg>
           <h3>Мы ждём вас</h3>
-          <p>Будет тепло, красиво и очень душевно.</p>
-        </article>
-        <article>
-          <div class="calendar">
-            <b>АВГУСТ</b>
-            <div class="cal-grid">
-              <span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span>
-              <span></span><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span>
-              <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span class="mark">9</span><span>10</span>
-            </div>
+          <p>Проведём этот день красиво, душевно и по‑семейному.</p>
+        </div>
+        <div class="calendar">
+          <b>АВГУСТ</b>
+          <div class="grid">
+            <span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span>
+            <span></span><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span>
+            <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span class="mark">9</span><span>10</span>
           </div>
-        </article>
+        </div>
       </section>
 
-      <section class="sec location">
-        <div class="table doodle"></div>
+      <section class="block center">
+        <svg class="draw" viewBox="0 0 260 110"><path d="M20 80 h220 M40 80 v-25 h180 v25 M75 55 v25 M130 55 v25 M185 55 v25"/></svg>
         <h3>Место проведения</h3>
         <p>Загородный клуб «Лесной», Московская обл., п. Сосновка, 8</p>
         <a href="#" class="btn">Координаты</a>
       </section>
 
-      <section class="sec">
+      <section class="block center">
         <h3>Программа дня</h3>
         <div class="timeline">
-          <div><strong>15:30</strong><em>Сбор гостей</em></div>
-          <div><strong>16:00</strong><em>Церемония</em></div>
-          <div><strong>17:30</strong><em>Банкет</em></div>
-          <div><strong>19:00</strong><em>Танцы и торт</em></div>
+          <div><strong>15:30</strong><span>Сбор гостей</span></div>
+          <div><strong>16:00</strong><span>Церемония</span></div>
+          <div><strong>17:30</strong><span>Банкет</span></div>
+          <div><strong>19:00</strong><span>Танцы</span></div>
         </div>
       </section>
 
-      <section class="sec">
+      <section class="block center">
         <h3>Дресс-код</h3>
-        <p>Пожалуйста, поддержите нежную палитру праздника.</p>
-        <div class="colors">
-          <span style="--c:#f6d9e7"></span><span style="--c:#c9d6ff"></span><span style="--c:#dde8ff"></span>
-          <span style="--c:#e3e5cf"></span><span style="--c:#d8d8d8"></span><span style="--c:#e7d0f7"></span>
-        </div>
+        <p>Будем рады, если поддержите нежную палитру праздника.</p>
+        <div class="colors"><i style="--c:#f3d5e4"></i><i style="--c:#c8d8ff"></i><i style="--c:#d8e5ff"></i><i style="--c:#e6e8d2"></i><i style="--c:#d8d8d8"></i><i style="--c:#e6d8f5"></i></div>
         <a href="#" class="btn">Палитра образа</a>
       </section>
 
-      <section class="sec">
+      <section class="block center">
         <h3>До свадьбы осталось</h3>
-        <div class="countdown" id="countdown">
-          <div><b id="d">00</b><span>дней</span></div>
-          <div><b id="h">00</b><span>часов</span></div>
-          <div><b id="m">00</b><span>мин</span></div>
-          <div><b id="s">00</b><span>сек</span></div>
-        </div>
+        <div class="countdown"><div><b id="d">00</b><span>дней</span></div><div><b id="h">00</b><span>час</span></div><div><b id="m">00</b><span>мин</span></div><div><b id="s">00</b><span>сек</span></div></div>
       </section>
 
-      <section class="sec">
+      <section class="block center">
         <h3>Пожелания</h3>
-        <p>Ваше присутствие — самый важный подарок. Если захотите нас порадовать, будем рады вкладу в свадебное путешествие.</p>
-        <div class="cart doodle"></div>
+        <p>Ваше присутствие — лучший подарок. По желанию можно поддержать нашу мечту о свадебном путешествии.</p>
+        <svg class="draw" viewBox="0 0 200 120"><path d="M30 95 h140 v-45 h-140 z M50 95 v15 h20 v-15 M130 95 v15 h20 v-15 M30 60 l70-35 l70 35"/></svg>
       </section>
 
-      <section class="sec contacts">
+      <section class="block center">
         <h3>Контакты</h3>
-        <p>По вопросам в день торжества:</p>
-        <p class="name">Алексей<br/><a href="tel:+79998887766">+7 (999) 888-77-66</a></p>
+        <p>По всем вопросам:</p>
+        <p class="contact">Алексей<br><a href="tel:+79998887766">+7 (999) 888‑77‑66</a></p>
         <a href="#form" class="btn">Написать</a>
       </section>
 
-      <section class="sec form" id="form">
+      <section class="block form" id="form">
         <h3>Анкета гостя</h3>
-        <label>Имя и фамилия<input type="text" placeholder="Ваш ответ" /></label>
-        <label>Сможете присутствовать?
-          <select><option>Да, с радостью!</option><option>К сожалению, нет</option></select>
-        </label>
-        <label>Ваши пожелания<textarea rows="3" placeholder="Ваши пожелания"></textarea></label>
+        <label>Ваше имя<input type="text" placeholder="Введите имя"></label>
+        <label>Придёте на праздник?<select><option>Да, с радостью!</option><option>К сожалению, нет</option></select></label>
+        <label>Пожелания молодожёнам<textarea rows="3" placeholder="Ваше сообщение"></textarea></label>
       </section>
 
-      <section class="title sec end">
-        <small>Ждём с любовью</small>
-        <h2>Лёша<br/>+<br/>Аня</h2>
+      <section class="block center end">
+        <small>Ждём вас с любовью</small>
+        <h2>Лёша<br>+<br>Аня</h2>
       </section>
     </main>
 
