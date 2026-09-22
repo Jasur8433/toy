@@ -1,0 +1,21 @@
+[Unit]
+Description=Campus Pass attendance integration
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=campus-pass
+WorkingDirectory=/opt/campus-pass
+EnvironmentFile=/opt/campus-pass/.env
+ExecStart=/usr/bin/node /opt/campus-pass/server.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/campus-pass/data
+
+[Install]
+WantedBy=multi-user.target
