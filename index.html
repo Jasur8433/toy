@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Система контроля посещаемости студентов" />
+  <title>Campus Pass — контроль посещаемости</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero" aria-label="Сводка посещаемости">
+      <nav class="topbar">
+        <a class="brand" href="#" aria-label="Campus Pass">
+          <span class="brand-mark"><i></i><i></i><i></i></span>
+          <span>campus<span>pass</span></span>
+        </a>
+        <div class="nav-actions">
+          <button class="icon-button" aria-label="Уведомления"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><b></b></button>
+          <button class="profile-button"><span class="avatar">АМ</span><span class="profile-name">Анна Миронова<small>Администратор</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></button>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> Система работает в штатном режиме</p>
+        <h1>Доброе утро,<br><em>Анна.</em></h1>
+        <p class="hero-copy">Сегодня, 18 сентября · Четверг</p>
+      </div>
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+    </section>
+
+    <section class="dashboard">
+      <section class="stats-grid" aria-label="Ключевые показатели">
+        <article class="stat-card accent-purple"><div class="stat-icon people-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><p>В институте сейчас</p><strong>1 248</strong><span class="trend positive">↑ 12 <small>за час</small></span></article>
+        <article class="stat-card accent-orange"><div class="stat-icon leave-icon"><svg viewBox="0 0 24 24"><path d="M10 17l5-5-5-5M15 12H3M21 3v18H9"/></svg></div><p>Покинули сегодня</p><strong>836</strong><span class="trend neutral">Обновлено 2 мин назад</span></article>
+        <article class="stat-card accent-green"><div class="stat-icon face-icon"><svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3M8 11h.01M16 11h.01M9 16c.8.7 1.8 1 3 1s2.2-.3 3-1"/></svg></div><p>Распознано лиц</p><strong>2 084</strong><span class="trend positive">99,4% <small>точность</small></span></article>
+      </section>
+
+      <div class="content-grid">
+        <section class="panel activity-panel">
+          <header class="panel-header"><div><p class="section-kicker">ONLINE · Журнал событий</p><h2>Последние проходы</h2></div><button class="text-button">Все события <span>→</span></button></header>
+          <div class="filter-row"><button class="filter active" data-filter="all">Все</button><button class="filter" data-filter="in">Приходы</button><button class="filter" data-filter="out">Уходы</button><span class="filter-date">Сегодня <svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></span></div>
+          <div class="events" id="events">
+            <article class="event" data-type="in"><div class="student-avatar av-1">МК</div><div class="event-person"><strong>Мария Кузнецова</strong><span>ИТ-21 · Главный вход</span></div><time>09:42</time><span class="direction in">Приход <i>↓</i></span><button class="more" aria-label="Действия">•••</button></article>
+            <article class="event" data-type="in"><div class="student-avatar av-2">ДС</div><div class="event-person"><strong>Дмитрий Соколов</strong><span>ЭК-32 · Корпус Б</span></div><time>09:38</time><span class="direction in">Приход <i>↓</i></span><button class="more" aria-label="Действия">•••</button></article>
+            <article class="event" data-type="out"><div class="student-avatar av-3">ПВ</div><div class="event-person"><strong>Полина Волкова</strong><span>ЮР-14 · Главный вход</span></div><time>09:31</time><span class="direction out">Уход <i>↑</i></span><button class="more" aria-label="Действия">•••</button></article>
+            <article class="event" data-type="in"><div class="student-avatar av-4">АК</div><div class="event-person"><strong>Артём Климов</strong><span>ИТ-22 · Корпус А</span></div><time>09:27</time><span class="direction in">Приход <i>↓</i></span><button class="more" aria-label="Действия">•••</button></article>
+          </div>
+        </section>
+
+        <aside class="sidebar">
+          <section class="panel turnstile-panel"><header class="panel-header"><div><p class="section-kicker">МОНИТОРИНГ</p><h2>Турникеты</h2></div><span class="status-chip"><i></i> 6 из 6 онлайн</span></header><div class="turnstiles"><div><span class="camera-dot green"></span><b>Главный вход</b><small>Камера 01 · Hikvision</small><em>работает</em></div><div><span class="camera-dot green"></span><b>Корпус А</b><small>Камера 02 · Hikvision</small><em>работает</em></div><div><span class="camera-dot green"></span><b>Корпус Б</b><small>Камера 03 · Hikvision</small><em>работает</em></div></div><button class="outline-button">Состояние всех устройств <span>→</span></button></section>
+          <section class="hemis-card"><div class="hemis-glow"></div><div class="hemis-symbol">H</div><div><p>Интеграция с</p><h3>HEMIS</h3></div><span class="sync"><i></i> Синхронизировано</span><button>Открыть журнал синхронизации <span>→</span></button></section>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
